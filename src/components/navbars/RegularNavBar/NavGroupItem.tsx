@@ -21,7 +21,7 @@ const NavGroupItem = ({
   return (
     <li id="solution" className="relative group/serv">
       <div
-        className={`flex items-center gap-x-1 p-2 cursor-pointer ${color} hover:text-gray-900`}
+        className={`flex items-center gap-x-1 p-2 cursor-pointer ${color} hover:text-sky-900`}
         onClick={(e) => handleOpen(e)}
       >
         <span className=" text-base font-medium">{navName}</span>
@@ -38,7 +38,7 @@ const NavGroupItem = ({
                   key={value.name}
                 >
                   {
-                    <value.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" />
+                    <value.icon className="h-6 w-6 flex-shrink-0 text-sky-600" />
                   }
                   <div className="ml-4">
                     <p className="text-base font-medium text-gray-900">
@@ -66,7 +66,7 @@ const NavGroupItem = ({
                     key={value.href}
                   >
                     {
-                      <value.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" />
+                      <value.icon className="h-6 w-6 flex-shrink-0 text-sky-600" />
                     }
                     <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">
