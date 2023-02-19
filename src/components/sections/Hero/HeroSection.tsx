@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -28,19 +29,19 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <a
+            <Link
               href="/auth/signin"
               className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
             >
               Registrate
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#"
               className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow hover:text-sky-700 focus:outline-none focus:ring active:text-sky-500 sm:w-auto"
             >
               Conoce Mas
-            </a>
+            </Link>
           </div>
         </div>
       </div>
