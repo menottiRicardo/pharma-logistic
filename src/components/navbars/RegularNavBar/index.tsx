@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Fragment } from "react";
 import {
+  ArrowDownRightIcon,
   ArrowPathIcon,
   Bars3Icon,
   BookmarkSquareIcon,
@@ -13,51 +13,51 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
+  ArrowUpRightIcon,
+  GlobeAsiaAustraliaIcon,
+  RectangleStackIcon,
+  TruckIcon,
+  ArchiveBoxArrowDownIcon,
 } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import NavGroupItem from "./NavGroupItem";
 import NavItem from "./NavItem";
 import Image from "next/image";
 const services = [
   {
-    name: "Analytics",
+    name: "Exportacion",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "#",
-    icon: ChartBarIcon,
+    icon: ArrowUpRightIcon,
   },
   {
-    name: "Engagement",
+    name: "Importacion",
     description: "Speak directly to your customers in a more meaningful way.",
     href: "#",
-    icon: CursorArrowRaysIcon,
+    icon: ArrowDownRightIcon,
   },
   {
-    name: "Security",
+    name: "Nacionalizacion",
     description: "Your customers' data will be safe and secure.",
     href: "#",
-    icon: ShieldCheckIcon,
+    icon: GlobeAsiaAustraliaIcon,
   },
   {
-    name: "Integrations",
+    name: "Distribucion",
     description: "Connect with third-party tools that you're already using.",
     href: "#",
-    icon: Squares2X2Icon,
+    icon: TruckIcon,
   },
   {
-    name: "Automations",
+    name: "Almacenamiento",
     description:
       "Build strategic funnels that will drive your customers to convert",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: ArchiveBoxArrowDownIcon,
   },
 ];
 
-const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
-];
 const resources = [
   {
     name: "Help Center",

@@ -1,5 +1,4 @@
 import {
-  AcademicCapIcon,
   ArchiveBoxArrowDownIcon,
   ArrowDownRightIcon,
   ArrowUpRightIcon,
