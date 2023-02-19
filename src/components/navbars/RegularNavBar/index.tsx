@@ -108,7 +108,7 @@ const RegularNavBar = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block text-teal-600" href="/">
+            <Link className="block text-sky-600" href="/">
               <span className="sr-only">Home</span>
               <div className="relative h-20 w-28">
                 <Image src="/logo.png" alt="logo image" fill />
@@ -166,9 +166,11 @@ const RegularNavBar = () => {
                       onClick={(e) => e.stopPropagation()}
                     >
                       <div className="flex justify-between items-center mb-3">
-                        <h1 className="text-2xl">Logo</h1>
+                        <div className="relative h-12 w-16">
+                          <Image src="/logo.png" alt="logo image" fill />
+                        </div>
                         <XMarkIcon
-                          className="w-7 border-2 border-red-500 rounded-md"
+                          className="w-7 border-2 border-sky-500 rounded-md"
                           onClick={(e) => {
                             e.stopPropagation();
                             setOpen(false);

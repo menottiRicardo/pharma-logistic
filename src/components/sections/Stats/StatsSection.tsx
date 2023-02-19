@@ -1,14 +1,12 @@
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Roles Abiertos", href: "#" },
+  { name: "Nuestros Valores", href: "#" },
+  { name: "Conoce el equipo", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "Oficinas", value: "12" },
+  { name: "Colaborados a tiempo completo", value: "300+" },
+  { name: "Horas por semana", value: "40" },
 ];
 
 export default function StatsSection() {
@@ -70,7 +68,7 @@ export default function StatsSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Work with us
+            Trabaja con nosotros
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
