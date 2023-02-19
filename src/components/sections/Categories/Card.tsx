@@ -1,36 +1,45 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Card = () => {
+const Card = ({
+  title,
+  description,
+  href,
+  Icon,
+  image,
+}: {
+  title: string;
+  description: string;
+  href: string;
+  Icon: any;
+  image: string;
+}) => {
   return (
     <Link
-      className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-      href="/accountant"
+      className="block rounded-xl border border-gray-100 shadow-sm hover:opacity-100 hover:shadow-lg hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring bg-white opacity-80"
+      href={href}
     >
-      <span className="inline-block rounded-lg bg-gray-50 p-3">
-        <svg
-          className="h-6 w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          ></path>
-        </svg>
-      </span>
+      <div className="w-full h-28 md:h-44 xl:h-48 relative rounded-xl bg-white">
+        <Image
+          src={image}
+          fill
+          alt={title + " image"}
+          className="rounded-t-xl backdrop-saturate-50 bg-white/20"
+        />
+      </div>
 
-      <h2 className="mt-2 font-bold">Accountant</h2>
+      <div className="p-4">
+        <span className="inline-block rounded-lg bg-gray-50 p-3">
+          <Icon className="w-6" />
+        </span>
 
-      <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-        Lorem ipsum dolor sit amet consectetur.
-      </p>
+        <h2 className="mt-2 font-bold">{title}</h2>
+
+        <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+          {description}
+        </p>
+      </div>
     </Link>
   );
 };

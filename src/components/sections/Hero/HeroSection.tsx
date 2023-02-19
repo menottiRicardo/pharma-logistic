@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="relative">
       <Image
-        src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
         className="absolute inset-0 w-full h-full"
         alt="hero image"
         fill
@@ -15,23 +15,24 @@ const HeroSection = () => {
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
-            Let us find your
+            Brindando salud
             <strong className="block font-extrabold text-sky-600">
-              Forever Home.
+              un paquete a la vez.
             </strong>
           </h1>
 
           <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Somos una de las empresas de logística farmacéutica que conecta a
+            las empresas del sector con sus mercados, en cualquier parte del
+            mundo.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
             <a
-              href="#"
+              href="/auth/signin"
               className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
             >
-              Contactanos
+              Registrate
             </a>
 
             <a

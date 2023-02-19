@@ -5,7 +5,7 @@ const links = [
 ];
 const stats = [
   { name: "Oficinas", value: "12" },
-  { name: "Colaborados a tiempo completo", value: "300+" },
+  { name: "Colaboradores a tiempo completo", value: "300+" },
   { name: "Horas por semana", value: "40" },
 ];
 

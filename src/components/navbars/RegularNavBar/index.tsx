@@ -28,7 +28,7 @@ const services = [
     name: "Exportacion",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+    href: "/servicio/exportacion",
     icon: ArrowUpRightIcon,
   },
   {
@@ -130,9 +130,9 @@ const RegularNavBar = () => {
               <div className="hidden sm:flex sm:gap-4">
                 <Link
                   className="rounded-md bg-sky-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                  href="/"
+                  href="/auth/signin"
                 >
-                  Contacto
+                  Inicia Sesion
                 </Link>
               </div>
 
@@ -200,9 +200,9 @@ const RegularNavBar = () => {
 
                       <Link
                         className="rounded-md bg-sky-600 px-5 py-2.5 font-medium text-white shadow w-full text-center"
-                        href="/"
+                        href="/auth/signin"
                       >
-                        Contacto
+                        Inicia Sesion
                       </Link>
                     </div>
                   </div>
